@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+<center>
+<b>WELCOME TO CUSTOMER HOME PAGE</b>
+<div align="right">
+<form action=./LogoutServlet>
+<input type="submit" value="logout"></div>
+</form>
+<form action="./Getcart">
+            <input type="hidden" name="name" value="Getcart">
+            <input type="submit" value="Getcart">
+               </form><br><br><br><br>
+             <table border="1px">
+        <form action="./Addtocart">
+            <th>Pizza Name</th> <th>Price</th>  <th>Add to Cart</th>
+            <tr><td>Muffuleta</td><td>$20</td><td><input type="hidden" name="name" value="Muffuleta">
+            <input type="hidden" name="price" value="20"><input type="submit" value="Add to cart"></td>
+        </tr>
+        </form>
+        <form action="./Addtocart">
+            <tr><td>Veggie Delight</td><td>$40</td><td>
+            <input type="hidden" name="name" value="Veggie Delight">
+            <input type="hidden" name="price" value="40"><input type="submit" value="Add to cart"></td>
+        </tr>  
+        </form>
+         <form action="./Addtocart">
+            <tr><td>Margherita</td><td>$10</td><td>
+            <input type="hidden" name="name" value="margherita">
+            <input type="hidden" name="price" value="10"><input type="submit" value="Add to cart"></td>
+            </tr>
+            </table><br><br><br><br>
+            <form action="./Totalproductcost">
+            <input type="hidden" name="name" value="Totalproductcost">
+            <input type="submit" value="Totalproductcost">
+        </form>
+</center>
+    </body>
+</html>
