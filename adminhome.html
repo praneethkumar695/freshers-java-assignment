@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>admin home page</title>
+</head>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	color: #0000FF;
+}
+.style2 {
+	font-size: 18px;
+	color: #FF00FF;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+</style>
+<body>
+<div align="right">
+<form action=./LogoutServlet>
+<input type="submit" value="logout"></div>
+</form>
+<b><center>DETAILS OF THE PRODUCTS</center></b><br><br><br>
+<center>
+<p align="center" class="style2">
+<table border="1px">
+        <form action="./productsleft">
+ <th>Pizza Name</th>   <th>productsleft</th>
+            <tr><td>Muffuleta</td><td><input type="hidden" name="name" value="Muffuleta">
+            <input type="submit" value="productsleft"></td>
+        </tr>
+        </form>
+        <form action="./productsleft">
+            <tr><td>Veggie Delight</td><td>
+            <input type="hidden" name="name" value="Veggie Delight">
+            <input type="submit" value="productsleft"></td>
+        </tr>  
+        </form>
+         <form action="./productsleft">
+            <tr><td>Margherita</td><td>
+            <input type="hidden" name="name" value="margherita">
+            <input type="submit" value="productsleft"></td>
+            </tr>
+              </form>
+</table>
+</p>
+</center><br><br><br><br><br>
+<b><center>NUMBER OF CUSTOMERS IN THE SHOP</center></b>
+<center>
+ <form action="./Customersleft">     
+            <input type="submit" value="customers"></td><br><br><br>
+</center>
+<b><center>NUMBER OF CARTS LEFT IN THE SHOP</center></b>
+<center>
+ <form action="./Cartsleft">     
+            <input type="submit" value="cartsleft"></td>
+<center><br><br><br>
+ </form>
+</body>
+</html>
