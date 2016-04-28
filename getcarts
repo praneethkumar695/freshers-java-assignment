@@ -1,0 +1,22 @@
+public Getusers extends HttpServlet
+{
+ public void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,Ioexception
+ {
+    PrintWriter out=request.getWriter();
+  
+int users=(Integer)context.getAttribute("users");
+if(users<5 && users>0)
+{
+out.println("you got a cart sucessfully!!shop now");
+users--;
+context.setAttribute("users",users);
+RequestDispatcher rd=getRequestDispatcher(" ");
+rd.include(request,response);
+
+}
+else
+{
+out.println("Shop is full please shop after some time");
+}
+}
+}
