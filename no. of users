@@ -1,0 +1,8 @@
+public NoOfUsers extends HttpServlet
+{
+public void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,Ioexception
+{
+ServletContext context=getServletContext();  
+context.setAttribute("users","5");
+}
+}
